@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+    background-image: url(media/212.jpeg);
+
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    width: 100%;
+    height: 100vh;
+  overflow: hidden;
+}
+.gameContainer {
+    background-color:rgba(0, 0, 0, 0.5);
+
+  /* background-image: url(212.jpeg);
+
+  background-repeat: no-repeat;
+  background-size: 100vw 100vh; */
+  width: 100%;
+  height: 100vh;
+}
+
+.dino {
+  background-image: url(media/11.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 200px;
+  height: 114px;
+  position: absolute;
+  bottom: 5px;
+  left: 52px;
+}
+
+.obstacle {
+  width: 230px;
+  height: 163px;
+  background-image: url(media/obs.png);
+  background-size: cover;
+  position: absolute;
+  bottom: 0;
+  left: 44vw;
+}
+.oe {
+  width: 322px;
+  height: 163px;
+  background-image: url(media/heli2.png);
+  background-size: cover;
+  position: absolute;
+  bottom: 50vh;
+  left: 44vw;
+}
+.arre {
+  width: 130px;
+  height: 203px;
+  background-image: url(media/arr.png);
+  background-size: cover;
+  position: absolute;
+  bottom: 0;
+  left: 44vw;
+}
+
+.animateDino {
+  animation: dino 0.6s linear;
+}
+
+.obstacleAni {
+  animation: obstacleAni 5s linear infinite;
+}
+.oe {
+  animation: oe 25s linear infinite;
+}
+
+.gameOver {
+  position: relative;
+  top: 77px;
+  left: 35vw;
+  font-size: 50px;
+  text-align: center;
+  font-family: Permanent Marker;
+  /* font-family: 'Ubuntu', sans-serif; */
+  text-decoration: none;
+  color: #070707;
+  font-weight: bold;
+}
+
+#scoreCont {
+  font-size: 35px;
+  color: #54212f;
+  font-weight: bold;
+  position: absolute;
+  right: 45px;
+  top: 31px;
+  /* border: 2px solid black; */
+  padding: 10px;
+  /* font-family: 'Ubuntu', sans-serif; */
+  /* border-radius: 10px; */
+}
+
+@keyframes dino {
+  0% {
+    bottom: 0;
+  }
+  50% {
+    bottom: 422px;
+  }
+  100% {
+    bottom: 0;
+  }
+}
+
+@keyframes obstacleAni {
+  0% {
+    left: 100vw;
+  }
+  100% {
+    left: -10vw;
+  }
+}
+
+@keyframes oe {
+  0% {
+    left: 150vw;
+  }
+  100% {
+    left: -10vw;
+  }
+}
+
+.back {
+  height: 81px;
+  margin: 16px;
+  margin-top: 52px;
+  position: fixed;
+}
